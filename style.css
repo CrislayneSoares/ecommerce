@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure {
+    display: flex;
+    margin-left: 20px;
+}
+header figure h1 {
+    font-size: 25px;
+}
+header figure img {
+    margin-right: 10px;
+}
+
+header nav {
+    width: 140px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header nav img {
+    width: 28px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.produtos{
+    width: 100%; 
+}
+
+.produtos section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.produtos section img {
+    width: 200px;
+}
+
+span {
+    font-weight: 700;
+    color: #5CA720;
+}
+
+footer {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+ footer ul {
+    list-style: none;
+    color: #161616;
+    font-size: 20px;
+}
+
+.contato {
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    height: 26vh;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contato form h2 {
+    font-size: 14px;
+}
+
+.contato form .email {
+    width: 250px;
+    height: 30px;
+    padding: 14px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contato form .btn {
+    width: 100px;
+    height: 32px;
+    font-size: 14px;
+    background-color: #5CA720;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.redes {
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.redes figure img{
+    margin: 0px 8px;
+    vertical-align: middle;
+}
+
+.redes ul {
+    display: flex;
+}
+
+@media screen and (max-width: 375px) {
+    .produtos section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos div {
+        padding: 20px 0;
+    }
+    .produtos section img {
+        width: 300px;
+    }
+    .contato {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contato li {
+        font-size: 16px;
+    }
+    .redes img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .produtos section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos div {
+        padding: 20px 0;
+    }
+    .produtos section img {
+        width: 300px;
+    }
+    .contato {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
